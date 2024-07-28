@@ -1,24 +1,9 @@
+{% extends 'layout.html' %}
 <!DOCTYPE html>
 {% load static %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina de suporte</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-</head>
-<body>
+
+{% block content %}
     <h1>Pagina de suporte</h1>
     <p>Esta é a pagina de suporte.</p>
     <p>Volte para <a href="/">Home</a> page ou va para a nossa <a href="/about">About</a> page.</p>
-</body>
-    <nav> 
-        <a href="/"> apple </a>
-        <a href="/about"> melon </a>
-        <a href="/"> grapes </a>
-    </nav>
-    <main>
-        {% block content %}
-        {% endblock %}
-    </main>
-</html>
+{% endblock %}
