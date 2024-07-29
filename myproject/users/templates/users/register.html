@@ -1,10 +1,16 @@
-{% extends 'layout.html' %}
-
-{% block title %}
-    Users
-{% endblock %}
-
-{% block content %}
-    <h1>Users page</h1>
-    <p>Check out my <a href="/">Home</a> page and my <a href="/support">Support</a> page.</p>
-{% endblock %}
+<!DOCTYPE html>
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Django App
+    </title>
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    <script src="{% static 'js/main.js' %}" defer></script>
+</head>
+<body>
+    <h1> Strawberry store </h1>
+</body>
+</html>

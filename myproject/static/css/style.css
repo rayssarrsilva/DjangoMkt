@@ -6,47 +6,20 @@
 
 body {
     min-height: 100vh;
-    color: rgb(12, 12, 12);
+    background-color: black;
+    color: whitesmoke;
     font-size: 3rem;
-    display: flex;
-    flex-flow: column;
 }
 
 nav {
     padding: 1rem;
     background-color: #44B78B;
-    color: rgb(5, 5, 5);
+    color: white;
     font-size: 2.5rem;
 }
 
 main {
-    flex-grow: 1;
-    display: grid;
-    place-content: center;
-}
-
-h1,
-p {
-    text-align: center;
-}
-
-a {
-    text-decoration: none;
-    color: #81dbb8;
-}
-
-.banner {
-    display: block;
-    width: 100%;
-    max-width: 800px;
-}
-
-p {
-    font-size: 2.5rem;
-}
-
-h1, h2 {
-    font-size: 2.5rem;
+    padding: 1rem;
 }
 
 section {
@@ -55,3 +28,26 @@ section {
     gap: 1rem;
 }
 
+h1,
+h2 {
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: #81dbb8;
+}
+
+a:hover {
+    opacity: .85;
+}
+
+.banner {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+}
