@@ -11,4 +11,3 @@ def about(request):
 
 def suporte(request):
     return render(request, 'support.html')
-

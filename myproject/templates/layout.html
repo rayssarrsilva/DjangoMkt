@@ -13,13 +13,16 @@
     <script src="{% static 'js/main.js' %}" defer></script>
 </head>
 <body>
-    <nav> 
-        <a href="/"> apple </a>
-        <a href="/about"> melon </a>
-        <a href="{% url 'posts:list' %}"> posts </a>
-        <a href="/support"> support </a>
-        <h1> Strawberry store </h1>
-    </nav>
+    {% block nav %}
+        <nav> 
+            <a href="/"> home </a>
+            <a href="/about"> about </a>
+            <a href="{% url 'posts:list' %}"> posts </a>
+            <a href="/support"> support </a>
+            <a href="/galeria"> galeria </a>
+            <h1> Strawberry store </h1>
+        </nav>
+    {% endblock %}
     <main>
         {% block content %}
         {% endblock %}
