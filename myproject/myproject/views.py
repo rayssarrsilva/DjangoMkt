@@ -1,5 +1,6 @@
 #from django.http import HttpResponse
 from django.shortcuts import render 
+from django.views.generic.base import TemplateView
 
 def homepage(request):
     #return HttpResponse("Hello world, you are in the homepage")
@@ -11,3 +12,4 @@ def about(request):
 
 def suporte(request):
     return render(request, 'support.html')
+ 

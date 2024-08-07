@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'posts',
     'galeria',
     'users',
+    'cbv',
 ]
 
 MIDDLEWARE = [

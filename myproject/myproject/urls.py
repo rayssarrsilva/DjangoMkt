@@ -30,7 +30,8 @@ urlpatterns = [
     path('posts/', include('posts.urls')),
     path('galeria/', include('galeria.urls')),
     path('users/', include('users.urls')),
-    path('ex1', TemplateView.as_view(template_name="ex1.html"))
+    path('ex1', TemplateView.as_view(template_name="ex1.html", extra_context={'paragrafo':'escreva...', 'dominos':'Qual sua frase do dia?'})),
+    
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
