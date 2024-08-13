@@ -5,3 +5,4 @@ from django.http import HttpResponse
 
 def galeriaPage(request):
     return render(request, 'galeria/gal.html')
+
