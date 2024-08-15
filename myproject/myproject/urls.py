@@ -20,6 +20,7 @@ from . import views
 from django.conf.urls.static import static 
 from django.conf import settings 
 from django.views.generic import TemplateView
+from cbv.views import Ex2View
 
 
 urlpatterns = [
@@ -32,6 +33,7 @@ urlpatterns = [
     path('users/', include('users.urls')),
     path('ex1', TemplateView.as_view(template_name="ex1.html", extra_context={'paragrafo':'escreva...', 'dominos':'Qual sua frase do dia?'})),
     path('cbv/', include('cbv.urls')),
+    path('ex2/', Ex2View.as_view(), name='ex2'),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
