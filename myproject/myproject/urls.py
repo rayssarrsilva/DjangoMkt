@@ -34,6 +34,7 @@ urlpatterns = [
     path('ex1', TemplateView.as_view(template_name="ex1.html", extra_context={'paragrafo':'escreva...', 'dominos':'Qual sua frase do dia?'})),
     path('cbv/', include('cbv.urls')),
     path('ex2/', Ex2View.as_view(), name='ex2'),
+    path('cbv/', include('cbv.urls', namespace='cbv'))
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

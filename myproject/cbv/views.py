@@ -30,3 +30,4 @@ class Ex2View(TemplateView):
         context['nome2'] = context['nome'] = Nome.objects.get(id=2)
         return context
     
+# abrir shell do python: py manage.py shell
