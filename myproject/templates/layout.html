@@ -21,9 +21,15 @@
             <a href="/support"> support </a>
             <a href="/galeria"> galeria </a>
             <a href="/users/"> registro </a>
+            <a href="/users/login/"> login </a>
             <a href={% url 'users:login' %}> registro </a>
             <a href="/cbv/horario"> horario </a>
             <h1> Strawberry store </h1>
+            
+            <form class="logout" action="{% url 'users:logout' %}" method="post"> 
+                {% csrf_token %}
+                <button class="logout-button" arial-label="User Logout" title="User Logout">Logout</button>
+            </form>
         </nav>
     {% endblock %}
     <main>
