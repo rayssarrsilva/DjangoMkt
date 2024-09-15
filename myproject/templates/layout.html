@@ -21,7 +21,9 @@
             <a href="/support"> support </a>
             <a href="/galeria"> galeria </a>
             <a href="/users/"> registro </a>
-            <a href={% url 'posts:new-post' %}> [Novo Post] </a>
+            <a href={% url 'posts:new-post' %}>  
+                <span class="logout-button" arial-label="novo post" title="requer login para acesso"> [Novo Post] </span>
+            </a>
             <a href="/users/login/"> login </a>
             <a href={% url 'users:login' %}> registro </a>
             <a href="/cbv/horario"> horario </a>
