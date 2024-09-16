@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from .models import Post
 from django.contrib.auth.decorators import login_required
+from . import forms #Chapter12: importa o arquivo forms presente na pasta local
 
 # Create your views here.
 
@@ -14,4 +15,5 @@ def post_page(request, slug):
 
 @login_required(login_url="/users/login/") #Verifica se o usuario esta logado, se nao estiver redireciona para a url inserida
 def post_new(request):
-    return render(request, 'posts/post_new.html')
+    form = forms.CreatePost() #variavel para ser chamada por 'form': form
+    return render(request, 'posts/post_new.html', {'form': form} )
