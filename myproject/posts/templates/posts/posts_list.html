@@ -1,13 +1,13 @@
 {% extends 'Layout.html' %}
 
 {% block title %}
-    Posts  
+    Posts
 {% endblock %}
 
 
 {% block content %}
 <section>
-    <h1>Posts</h1>
+    <h1>Posts Home</h1>
 
     {% for post in posts %}
         <article class="post">
@@ -16,7 +16,7 @@
                     {{ post.title }}
                 <a/>
             </h1>
-            <p>{{ post.date}}</p>
+            <p>{{ post.date}} by {{ post.author }}</p>
             <p>{{ post.body }}</p>
         </article>
     {% endfor %}
