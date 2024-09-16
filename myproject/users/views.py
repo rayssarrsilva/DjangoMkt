@@ -24,7 +24,6 @@ def login_view(request):
         form = AuthenticationForm(data=request.POST) #key word DATA 
         if form.is_valid(): #se a autenticação for valida entao é redirecionado
             login(request, form.get_user())
-            return redirect("posts:list")
     else:
         form = AuthenticationForm() #solitica autenticação do formulario
     return render(request, 'users/login.html', {'form': form})
